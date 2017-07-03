@@ -1,0 +1,10 @@
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\bin\Debug\ComicBookGalleryModel.exe.config
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\bin\Debug\ComicBookGalleryModel.exe
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\bin\Debug\ComicBookGalleryModel.pdb
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\bin\Debug\EntityFramework.dll
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\bin\Debug\EntityFramework.xml
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\obj\Debug\ComicBookGalleryModel.csprojResolveAssemblyReference.cache
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\obj\Debug\ComicBookGalleryModel.exe
+C:\Users\anija\Source\Repos\comic-book-gallery-model\src\ComicBookGalleryModel\obj\Debug\ComicBookGalleryModel.pdb
