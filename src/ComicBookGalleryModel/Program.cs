@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ComicBookGalleryModel.Models;
+using System.Data.Entity;
 
 namespace ComicBookGalleryModel
 {
@@ -14,22 +15,33 @@ namespace ComicBookGalleryModel
             
             using (var context = new Context())
             {
+                var series = new Series()
+                {
+                    Title = "The Amazing Spider-Man"
+                };
                 // To add comic book
                 context.ComicBooks.Add(new ComicBook()
-                {
-                    SeriesTitle = "The Amazing Spider-Man",
+                {   
+                    Series = series,
                     IssueNumber = 1,
                     PublishedOn = DateTime.Today
                 });
-
+                context.ComicBooks.Add(new ComicBook()
+                {
+                    Series = series,
+                    IssueNumber = 2,
+                    PublishedOn = DateTime.Today
+                });
                 context.SaveChanges();
 
                 // To retrieve comic book
 
-                var comicBooks = context.ComicBooks.ToList();
+                var comicBooks = context.ComicBooks
+                    .Include(cb => cb.Series)
+                    .ToList();
                 foreach (var comicBook in comicBooks)
                 {
-                    Console.WriteLine(comicBook.SeriesTitle);
+                    Console.WriteLine(comicBook.DisplayText);
                 }
 
                 Console.ReadLine();

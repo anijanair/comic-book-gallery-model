@@ -15,6 +15,12 @@ namespace ComicBookGalleryModel.Models
         public DateTime PublishedOn{ get; set; }
         public decimal? AvereageRating { get; set; }
 
-
+        public string DisplayText
+        {
+            get
+            {
+                return $"{Series?.Title} #{IssueNumber}";
+            }
+        }
     }
 }
