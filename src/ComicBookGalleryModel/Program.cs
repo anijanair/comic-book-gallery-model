@@ -27,7 +27,7 @@ namespace ComicBookGalleryModel
                     PublishedOn = DateTime.Today
                 });
                 context.ComicBooks.Add(new ComicBook()
-                {
+                { 
                     Series = series,
                     IssueNumber = 2,
                     PublishedOn = DateTime.Today
