@@ -81,7 +81,7 @@ namespace ComicBookGalleryModel
                 context.ComicBooks.Add(comicBook2);
                 context.ComicBooks.Add(comicBook3);
 
-                context.SaveChanges();
+                
 
                 // To retrieve comic book
 

@@ -16,7 +16,7 @@ namespace ComicBookGalleryModel
         public Context()
         {
            // Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Context>());
-            Database.SetInitializer(new DropCreateDatabaseAlways<Context>());
+            Database.SetInitializer(new DatabaseInitializer());
         }
         public DbSet<ComicBook> ComicBooks { get; set; }
 
@@ -24,7 +24,7 @@ namespace ComicBookGalleryModel
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-            modelBuilder.Entity<ComicBook>().Property(cb => cb.AvereageRating)
+            modelBuilder.Entity<ComicBook>().Property(cb => cb.AverageRating)
                 .HasPrecision(5,2);
         }
     }
