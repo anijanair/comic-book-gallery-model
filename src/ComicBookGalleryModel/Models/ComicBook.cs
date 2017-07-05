@@ -9,6 +9,10 @@ namespace ComicBookGalleryModel.Models
 {
     public class ComicBook
     {
+        public ComicBook()
+        {
+            Artists = new List<Artist>();
+        }
         public int Id { get; set; }
         public int SeriesId { get; set; }
         public int IssueNumber { get; set; }
@@ -17,6 +21,7 @@ namespace ComicBookGalleryModel.Models
         public decimal? AvereageRating { get; set; }
 
         public Series Series { get; set; }
+        public ICollection<Artist> Artists { get; set; }
 
         public string DisplayText
         {
